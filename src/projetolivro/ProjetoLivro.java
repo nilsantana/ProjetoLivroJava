@@ -16,7 +16,19 @@ public class ProjetoLivro {
      */
     public static void main(String[] args) {
         
-        // TODO code application logic here
+        Pessoa[] p = new Pessoa[2];
+        Livro[] l = new Livro[3];
+        
+        p[0] = new Pessoa("Joana",21,"F");
+        p[1] = new Pessoa("Ana",31,"F");
+        
+        
+        l[0] = new Livro("Aprendendo Java","Antonio jarra",300,p[0]);
+        l[1] = new Livro("POO para iniciantes","Maria de Fátima",500,p[0]);
+        l[2] = new Livro("Java Avançado","Helena Silva",800,p[1]);
+        
+        System.out.println(l[0].detalhesg());
+        
     }
     
 }
